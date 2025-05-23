@@ -1,0 +1,9 @@
+{
+    "C_Cpp.dimInactiveRegions": false,
+    "java.project.explorer.showNonJavaResources": false,
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "cmath": "cpp"
+    }
+}
