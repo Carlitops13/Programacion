@@ -3,10 +3,10 @@
 using namespace std;
 
 int main() {
-    const string USUARIO_TEST = "test.estudiante";
+    
     const string CLAVE_TEST = "clave.test";
     const int MAX_INTENTOS_PERMITIDOS = 3;
-    string usuarioIngresado;
+   
     string claveIngresada;
     int intentosRealizados = 0;
     bool credencialesValidas = false;
@@ -15,13 +15,12 @@ int main() {
     while (credencialesValidas== false && intentosRealizados< MAX_INTENTOS_PERMITIDOS){
         intentosRealizados++;
         cout << "Intento de acceso Nro "<<intentosRealizados<<" de "<< MAX_INTENTOS_PERMITIDOS<<"----"<<endl;
-        cout<< "Ingrese su usuario EPN: ";
-        cin>>usuarioIngresado;
+      
         cout<<"Ingrese su clave: ";
         cin>>claveIngresada;
         
-        //verificar credenciales correctas?
-        if (usuarioIngresado == USUARIO_TEST && claveIngresada == CLAVE_TEST) {
+        
+        if (claveIngresada == CLAVE_TEST) {
             credencialesValidas = true;
         }else {
         cout<<"Sistema EPN: Autenticacion Fallida"<<endl;
@@ -48,7 +47,7 @@ int main() {
     }
 } 
     if (credencialesValidas) {
-        cout<<"Bienvenido "<<USUARIO_TEST<<endl;
+     
         cout<<"Iniciando sesion...";
     }else {
         cout<<"Acceso denegado, su cuenta ha sido bloqueada temporalmente";
